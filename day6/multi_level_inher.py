@@ -1,4 +1,4 @@
-#Hierarchical inheritance
+
 class Management:
 
     def __init__(self):
@@ -10,24 +10,17 @@ class school(Management):
     def display_school(self):
         print("This is school")
 
-class ug(Management):
+class ug(school):
     def display_ug(self):
         print("This is Ug")
 
-class pg(Management):
+class pg(ug):
+    # def __init__(self):
+    #     super().__init__(self)
     def display_pg(self):
         print("This is pg")
-level1=school()
-level2=ug()
-level3=pg()
-print(level3.namee)
-level1.display_school()
-level1.display()
-level2.display_ug()
-level2.display()
-level3.display_pg()
-level3.display()
-# .display()
-# pg.display_school()
-# pg.display_ug()
-# pg.display_pg()
+
+
+obj=pg()
+obj.display()
+obj.display_ug()
