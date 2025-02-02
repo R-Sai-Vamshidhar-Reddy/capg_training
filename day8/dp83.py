@@ -82,7 +82,7 @@ class Department:
         self.employees.remove(employee)
         print(f"{employee.name} has been fired.")
 
-    def promote(self,employee: Employee) -> None:
+    def promote(self,employee: Employee) -> None:  #added method
             if employee.name=="Alice" and employee.hourss>35:
                 print(f"{employee.name} has been promted to senior manager")
             if employee.name=="Bob" and employee.working_hours>80:
