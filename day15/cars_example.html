@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                font-family: Arial;
+            }
+            ul{
+                list-style-type: none;
+            }
+            li{
+                background-color:lightblue;
+                margin:5px;
+                padding: 10px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cars</h1>
+        <ul id="list"></ul>
+    </body>
+    <script>
+        let Cars=[
+            "swift" ,
+            "bugati",
+            "lambo"
+    ]
+        let ele=document.getElementById("list")
+        for (let i in Cars){
+            let liEle=document.createElement("li");
+            liEle.textContent=Cars[i];
+            ele.appendChild(liEle);
+        }
+    </script>
+</html>
